@@ -276,8 +276,15 @@
       <hr>
 
     </div>
-    <div id="chart">
-    </div>
+      <div id="chart">
+      </div>
+
+      <div>
+        <br>
+        <p>Ce graphe représente l'évolution du taux de dépendance vieilliesse (c'est à dire la part de la population ayant plus de 65 ans
+          sur la part de la population ayant entre 15 et 64 ans) et du nombre d'enfants par femmes dans 180 pays entre 1950 et 2018
+          puis des projections de l'ONU jusqu'en 2100 </p>
+      </div>
 
   </div>
 </div>
@@ -362,7 +369,7 @@
   function x(d) { return d.OAD; }
   function y(d) { return d.FR; }
   function radius(d) { return d.PW; }
-   function color(d) { return d.Location; }
+   function color(d) { return d.Region; }
   function key(d) { return d.Location; }
 
   // Chart dimensions.
@@ -424,12 +431,12 @@
   var label = svg.append("text")
       .attr("class", "year label")
       .attr("text-anchor", "end")
-      .attr("y", height - 24)
+      .attr("y", height - 330)
       .attr("x", width)
       .text(1950);
 
   // Load the data.
-  d3.json("file_bis_2.json", function(nations) {
+  d3.json("nations.json", function(nations) {
      console.log(nations);
     // A bisector since many nation's data is sparsely-defined.
     var bisect = d3.bisector(function(d) { return d[0]; });
@@ -541,7 +548,7 @@
       return nations.map(function(d) {
         return {
           Location: d.Location,
-          region: d.Location,
+          Region: d.Region,
           OAD: interpolateValues(d.OAD, year),
           PW: interpolateValues(d.PW, year),
           FR: interpolateValues(d.FR, year)
