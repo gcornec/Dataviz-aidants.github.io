@@ -663,6 +663,16 @@ text {
   fill: #777;
 }
 
+/* Ajout de ma part */
+text.y.label{
+	font: 15px sans-serif;
+}
+
+text.x.label{
+	font: 15px sans-serif;
+}
+
+
 .year.label {
   font: 500 196px "Helvetica Neue";
   fill: #ddd;
