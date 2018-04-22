@@ -20,7 +20,7 @@
 
 <!-- Stylesheet
     ================================================== -->
-<link rel="stylesheet" type="text/css"  href="css/style_Antoine.css">
+<link rel="stylesheet" type="text/css"  href="css/style_Antoine_1.css">
 <link rel="stylesheet" type="text/css" href="css/prettyPhoto.css">
 <link href='http://fonts.googleapis.com/css?family=Lato:400,700,900,300' rel='stylesheet' type='text/css'>
 <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,800,600,300' rel='stylesheet' type='text/css'>
@@ -339,12 +339,14 @@
       <hr>
 
     </div>
+    <div class="col-md-9">
       <div id="chart">
       </div>
+    </div>
 
-      <div>
+      <div class="col-md-3">
         <br>
-        <p>Ce graphe représente l'évolution du taux de dépendance vieilliesse (c'est à dire la part de la population ayant plus de 65 ans
+        <p>Evolution du taux de dépendance vieilliesse (c'est à dire la part de la population ayant plus de 65 ans
           sur la part de la population ayant entre 15 et 64 ans) et du nombre d'enfants par femmes dans 180 pays entre 1950 et 2018
           puis des projections de l'ONU jusqu'en 2100 </p>
       </div>
@@ -437,7 +439,7 @@
 
   // Chart dimensions.
   var margin = {top: 19.5, right: 19.5, bottom: 19.5, left: 39.5},
-      width = 960 - margin.right,
+      width = 800 - margin.right,
       height = 500 - margin.top - margin.bottom;
 
   // Various scales. These domains make assumptions of data, naturally.
@@ -494,7 +496,7 @@
   var label = svg.append("text")
       .attr("class", "year label")
       .attr("text-anchor", "end")
-      .attr("y", height - 330)
+      .attr("y", height - 380)
       .attr("x", width)
       .text(1950);
 
