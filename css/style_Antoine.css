@@ -496,8 +496,8 @@ label {
 	 overflow: hidden;
 	 border: 1px solid #FFFFFF;
 	 background-color: #f1f1f1;
-	 margin-right: 160px;
-	 margin-left: 160px;
+	 margin-right: 190px;
+	 margin-left: 190px;
 }
 
 /* Style the buttons that are used to open the tab content */
@@ -582,13 +582,13 @@ h10 {
            text-transform: uppercase;
            font-weight: bold;
            font-size: 20px;
-           color: #D7DF01;
+           color: #FAAC58;
 }
 h11 {
            text-transform: uppercase;
            font-weight: bold;
            font-size: 20px;
-           color: #04B431;
+           color: #0dad8d;
 }
 h12 {
            text-transform: uppercase;
@@ -659,7 +659,7 @@ position: relative;
 width: 355px;
 height: 100px;
 padding: 0px;
-background: #E0F8EC;
+background: #F2F2F2;
 -webkit-border-radius: 200px;
 -moz-border-radius: 200px;
 border-radius: 200px;
