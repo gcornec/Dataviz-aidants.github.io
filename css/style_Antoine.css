@@ -329,8 +329,12 @@ img.img-circle.team-img {
 #team-section .thumbnail .caption {
 	padding: 9px;
 }
+
+
+
 /* Achivements Section */
 #achievements {
+	text-align: center;
 	padding: 80px 0;
 	background-color: #D8D8D8;
 }
@@ -487,19 +491,13 @@ label {
 
 
 
-
-
-
-
-
-
 /* Style the tab */
 .tab {
 	 overflow: hidden;
 	 border: 1px solid #FFFFFF;
 	 background-color: #f1f1f1;
-	 margin-right: 195px;
-	 margin-left: 195px;
+	 margin-right: 185px;
+	 margin-left: 185px;
 }
 
 /* Style the buttons that are used to open the tab content */
@@ -580,6 +578,25 @@ h9 {
 	color: #0dad8d;
 }
 
+h10 {
+           text-transform: uppercase;
+           font-weight: bold;
+           font-size: 20px;
+           color: #D7DF01;
+}
+h11 {
+           text-transform: uppercase;
+           font-weight: bold;
+           font-size: 20px;
+           color: #04B431;
+}
+h12 {
+           text-transform: uppercase;
+           font-weight: bold;
+           font-size: 20px;
+           color: #FF0000;
+}
+
 
 
 /* Popup container */
@@ -651,7 +668,7 @@ border-radius: 200px;
 
 /* CSS GILLES GRAPHE */
 #chart {
-  margin-left: -40px;
+  margin-left: 0px;
   height: 506px;
 }
 
@@ -696,4 +713,9 @@ text.x.label{
   fill: none;
   pointer-events: all;
   cursor: ew-resize;
+}
+
+ul{
+	list-style: disc;
+	margin-left: 30px;
 }

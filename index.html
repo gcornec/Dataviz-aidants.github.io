@@ -20,7 +20,7 @@
 
 <!-- Stylesheet
     ================================================== -->
-<link rel="stylesheet" type="text/css"  href="css/style_Antoine_1.css">
+<link rel="stylesheet" type="text/css"  href="css/style_Antoine.css">
 <link rel="stylesheet" type="text/css" href="css/prettyPhoto.css">
 <link href='http://fonts.googleapis.com/css?family=Lato:400,700,900,300' rel='stylesheet' type='text/css'>
 <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,800,600,300' rel='stylesheet' type='text/css'>
@@ -155,13 +155,33 @@
 
   <div id="Budget" class="tabcontent">
     <div class="row">
-      <div class="col-md-3">
+      <div class="col-md-2">
       </div>
-      <div class="col-md-3">
+      <div class="col-md-4">
 
-        <iframe id="datawrapper-chart-tQm5K" src="//datawrapper.dwcdn.net/tQm5K/3/" scrolling="no" frameborder="0" allowtransparency="true" style="width: 0; min-width: 100% !important;" height="202"></iframe>
-        <script type="text/javascript">if("undefined"==typeof window.datawrapper)window.datawrapper={};window.datawrapper["tQm5K"]={},window.datawrapper["tQm5K"].embedDeltas={"100":201.666666,"200":201.666666,"300":201.666666,"400":201.666666,"500":201.666666,"700":201.666666,"800":201.666666,"900":201.666666,"1000":201.666666},window.datawrapper["tQm5K"].iframe=document.getElementById("datawrapper-chart-tQm5K"),window.datawrapper["tQm5K"].iframe.style.height=window.datawrapper["tQm5K"].embedDeltas[Math.min(1e3,Math.max(100*Math.floor(window.datawrapper["tQm5K"].iframe.offsetWidth/100),100))]+"px",window.addEventListener("message",function(a){if("undefined"!=typeof a.data["datawrapper-height"])for(var b in a.data["datawrapper-height"])if("tQm5K"==b)window.datawrapper["tQm5K"].iframe.style.height=a.data["datawrapper-height"][b]+"px"});
-        </script>
+        <div id="highcharts-bfc0960b-f4d7-41e9-b772-74c80e9255bc"></div><script>
+            (function(){ var files = ["https://code.highcharts.com/stock/highstock.js","https://code.highcharts.com/highcharts-more.js","https://code.highcharts.com/highcharts-3d.js","https://code.highcharts.com/modules/data.js","https://code.highcharts.com/modules/exporting.js","https://code.highcharts.com/modules/funnel.js","https://code.highcharts.com/modules/annotations.js","https://code.highcharts.com/modules/solid-gauge.js"],loaded = 0; if (typeof window["HighchartsEditor"] === "undefined") {window.HighchartsEditor = {ondone: [cl],hasWrapped: false,hasLoaded: false};include(files[0]);} else {if (window.HighchartsEditor.hasLoaded) {cl();} else {window.HighchartsEditor.ondone.push(cl);}}function isScriptAlreadyIncluded(src){var scripts = document.getElementsByTagName("script");for (var i = 0; i < scripts.length; i++) {if (scripts[i].hasAttribute("src")) {if ((scripts[i].getAttribute("src") || "").indexOf(src) >= 0 || (scripts[i].getAttribute("src") === "http://code.highcharts.com/highcharts.js" && src === "https://code.highcharts.com/stock/highstock.js")) {return true;}}}return false;}function check() {if (loaded === files.length) {for (var i = 0; i < window.HighchartsEditor.ondone.length; i++) {try {window.HighchartsEditor.ondone[i]();} catch(e) {console.error(e);}}window.HighchartsEditor.hasLoaded = true;}}function include(script) {function next() {++loaded;if (loaded < files.length) {include(files[loaded]);}check();}if (isScriptAlreadyIncluded(script)) {return next();}var sc=document.createElement("script");sc.src = script;sc.type="text/javascript";sc.onload=function() { next(); };document.head.appendChild(sc);}function each(a, fn){if (typeof a.forEach !== "undefined"){a.forEach(fn);}else{for (var i = 0; i < a.length; i++){if (fn) {fn(a[i]);}}}}var inc = {},incl=[]; each(document.querySelectorAll("script"), function(t) {inc[t.src.substr(0, t.src.indexOf("?"))] = 1; }); function cl() {if(typeof window["Highcharts"] !== "undefined"){var options={"chart":{"type":"pie","polar":false,"height":242,"style":"{\"fontFamily\":\"\\\"Lucida Grande\\\", \\\"Lucida Sans Unicode\\\", Verdana, Arial, Helvetica, sans-serif\",\"fontSize\":\"12px\"}","plotBorderColor":"#cccccc"},"plotOptions":{"pie":{"allowPointSelect":false,"dataLabels":{"distance":-30,"style":{"fontWeight":"bold","color":"white","textShadow":"0px 0px 0px black"}},"innerSize":"50%","startAngle":-100,"endAngle":100,"center":["50%","75%"]},"series":{"dataLabels":{"enabled":true,"style":{"color":"#6E6E6E","fontSize":"11px","fontWeight":"bold","textOutline":"0px 0px contrast"}},"animation":false}},"title":{"text":"","style":{"fontFamily":"\"Lucida Grande\", \"Lucida Sans Unicode\", Verdana, Arial, Helvetica, sans-serif","color":"#333333","fontSize":"8px","fontWeight":"normal","fontStyle":"normal"}},"subtitle":{"text":""},"exporting":{},"series":[{"name":"Milliards d'euros","turboThreshold":0,"_colorIndex":0,"_symbolIndex":0,"marker":{}}],"data":{"csv":"\"null\";\"Milliards d'euros\"\n\"Valeur de l'aide informelle\";\"8,4\"\n\"Dépense de l'Etat pour la prise en charge de la dépendance\";\"8,1\"","googleSpreadsheetKey":false,"googleSpreadsheetWorksheet":false},"yAxis":[{"title":{"text":""},"labels":{}}],"colors":["#0dad8d","#ffee58","#90ed7d","#f7a35c","#8085e9","#f15c80","#e4d354","#2b908f","#f45b5b","#91e8e1"],"xAxis":[{"title":{},"labels":{}}],"legend":{}};/*
+             // Sample of extending options:
+             Highcharts.merge(true, options, {
+                 chart: {
+                     backgroundColor: "#bada55"
+                 },
+                 plotOptions: {
+                     series: {
+                         cursor: "pointer",
+                         events: {
+                             click: function(event) {
+                                 alert(this.name + " clicked\n" +
+                                       "Alt: " + event.altKey + "\n" +
+                                       "Control: " + event.ctrlKey + "\n" +
+                                       "Shift: " + event.shiftKey + "\n");
+                             }
+                         }
+                     }
+                 }
+             });
+             */new Highcharts.Chart("highcharts-bfc0960b-f4d7-41e9-b772-74c80e9255bc", options);}}})();
+             </script>
       </div>
       <div class="col-md-3">
           <img src="img/gov.png" alt="Government" width="50" height="50">
@@ -179,7 +199,29 @@
        <div class="col-md-3">
        </div>
          <div class="col-md-3">
-          <div class="infogram-embed" data-id="c93dc372-ec30-4d52-b897-66e0a9e8da48" data-type="interactive" data-title="JO"></div><script>!function(e,t,n,s){var i="InfogramEmbeds",o=e.getElementsByTagName(t)[0],d=/^http:/.test(e.location)?"http:":"https:";if(/^\/{2}/.test(s)&&(s=d+s),window[i]&&window[i].initialized)window[i].process&&window[i].process();else if(!e.getElementById(n)){var a=e.createElement(t);a.async=1,a.id=n,a.src=s,o.parentNode.insertBefore(a,o)}}(document,"script","infogram-async","https://e.infogram.com/js/dist/embed-loader-min.js");</script><div style="padding:8px 0;font-family:Arial!important;font-size:13px!important;line-height:15px!important;text-align:center;border-top:1px solid #dadada;margin:0 30px"><a href="https://infogram.com/c93dc372-ec30-4d52-b897-66e0a9e8da48" style="color:#989898!important;text-decoration:none!important;" target="_blank">JO</a><br><a href="https://infogram.com" style="color:#989898!important;text-decoration:none!important;" target="_blank" rel="nofollow">Infogram</a></div>
+           <div id="highcharts-7009b5cd-1e6e-43e4-8cad-14bce299dff0"></div><script>
+              (function(){ var files = ["https://code.highcharts.com/stock/highstock.js","https://code.highcharts.com/highcharts-more.js","https://code.highcharts.com/highcharts-3d.js","https://code.highcharts.com/modules/data.js","https://code.highcharts.com/modules/exporting.js","https://code.highcharts.com/modules/funnel.js","https://code.highcharts.com/modules/annotations.js","https://code.highcharts.com/modules/solid-gauge.js"],loaded = 0; if (typeof window["HighchartsEditor"] === "undefined") {window.HighchartsEditor = {ondone: [cl],hasWrapped: false,hasLoaded: false};include(files[0]);} else {if (window.HighchartsEditor.hasLoaded) {cl();} else {window.HighchartsEditor.ondone.push(cl);}}function isScriptAlreadyIncluded(src){var scripts = document.getElementsByTagName("script");for (var i = 0; i < scripts.length; i++) {if (scripts[i].hasAttribute("src")) {if ((scripts[i].getAttribute("src") || "").indexOf(src) >= 0 || (scripts[i].getAttribute("src") === "http://code.highcharts.com/highcharts.js" && src === "https://code.highcharts.com/stock/highstock.js")) {return true;}}}return false;}function check() {if (loaded === files.length) {for (var i = 0; i < window.HighchartsEditor.ondone.length; i++) {try {window.HighchartsEditor.ondone[i]();} catch(e) {console.error(e);}}window.HighchartsEditor.hasLoaded = true;}}function include(script) {function next() {++loaded;if (loaded < files.length) {include(files[loaded]);}check();}if (isScriptAlreadyIncluded(script)) {return next();}var sc=document.createElement("script");sc.src = script;sc.type="text/javascript";sc.onload=function() { next(); };document.head.appendChild(sc);}function each(a, fn){if (typeof a.forEach !== "undefined"){a.forEach(fn);}else{for (var i = 0; i < a.length; i++){if (fn) {fn(a[i]);}}}}var inc = {},incl=[]; each(document.querySelectorAll("script"), function(t) {inc[t.src.substr(0, t.src.indexOf("?"))] = 1; }); function cl() {if(typeof window["Highcharts"] !== "undefined"){Highcharts.setOptions({lang:{"downloadSVG":"Download SVG vector image","downloadPDF":"Download PDF document","downloadJPEG":"Download JPEG image","downloadPNG":"Download PNG image","printChart":"Print chart","contextButtonTitle":"Chart context menu"}});var options={"chart":{"type":"column","polar":false,"height":null,"backgroundColor":"#FFFFFF"},"plotOptions":{"series":{"colorByPoint":true,"animation":false,"dataLabels":{"enabled":true,"style":{"color":"#848484","fontSize":"11px","fontWeight":"bold","textOutline":"1px 1px contrast"}}}},"title":{"text":"","style":{"fontFamily":"\"Lucida Grande\", \"Lucida Sans Unicode\", Verdana, Arial, Helvetica, sans-serif","color":"#333333","fontSize":"8px","fontWeight":"normal","fontStyle":"normal"}},"subtitle":{"text":""},"exporting":{"scale":2},"series":[{"name":"Milliards d'euros","turboThreshold":0,"_symbolIndex":0,"marker":{}}],"data":{"csv":"\"null\";\"Milliards d'euros\"\n\"Valeur de l'aide informelle\";\"8,4\"\n\"Budget des JO\";\"6,6\"","googleSpreadsheetKey":false,"googleSpreadsheetWorksheet":false},"colors":["#0dad8d","#f44336","#90ed7d","#f7a35c","#8085e9","#f15c80","#e4d354","#2b908f","#f45b5b","#91e8e1"],"yAxis":[{"title":{"text":"Milliards d'euros"},"labels":{"format":"{\"Valeur de l'aide informelle\",\"Budget des JO\"}"}}],"xAxis":[{"title":{},"labels":{"format":"{\"Valeur de l'aide informelle\",\"Budget des JO\"}"}}],"legend":{"enabled":false},"tooltip":{"enabled":true},"lang":{"downloadSVG":"Download SVG vector image","downloadPDF":"Download PDF document","downloadJPEG":"Download JPEG image","downloadPNG":"Download PNG image","printChart":"Print chart","contextButtonTitle":"Chart context menu"}};/*
+              // Sample of extending options:
+              Highcharts.merge(true, options, {
+                  chart: {
+                      backgroundColor: "#bada55"
+                  },
+                  plotOptions: {
+                      series: {
+                          cursor: "pointer",
+                          events: {
+                              click: function(event) {
+                                  alert(this.name + " clicked\n" +
+                                        "Alt: " + event.altKey + "\n" +
+                                        "Control: " + event.ctrlKey + "\n" +
+                                        "Shift: " + event.shiftKey + "\n");
+                              }
+                          }
+                      }
+                  }
+              });
+              */new Highcharts.Chart("highcharts-7009b5cd-1e6e-43e4-8cad-14bce299dff0", options);}}})();
+              </script>
            </div>
    <div class="col-md-3">
        <img src="img/olympic-rings1.jpg" alt="Olympics" width="96" height="67.9">
@@ -219,26 +261,6 @@
    </script>
   </div>
 
-    <!--  <div class="space"></div>
-    <div class="row">
-      <div class="col-md-3 col-sm-6 service"> <i class="fa fa-desktop"></i>
-        <h4>Web Design</h4>
-        <p>Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam.</p>
-      </div>
-
-      <div class="col-md-3 col-sm-6 service"> <i class="fa fa-gears"></i>
-        <h4>App Development</h4>
-        <p>Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque.</p>
-      </div>
-      <div class="col-md-3 col-sm-6 service"> <i class="fa fa-rocket"></i>
-        <h4>Branding</h4>
-        <p>Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam.</p>
-      </div>
-      <div class="col-md-3 col-sm-6 service"> <i class="fa fa-line-chart"></i>
-        <h4>Marketing</h4>
-        <p>Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque.</p>
-      </div>
-    </div> -->
     </div>
   </div>
 </div>
@@ -337,8 +359,13 @@
     <div class="section-title center">
       <h2>Perspectives dans le monde</h2>
       <hr>
-
+      <h6>Le vieillissement de la population n'est pas intrinsèque à la France et <b>tous les pays du monde sont concernés</b> <br>
+        La dépendance est un phénomène global et s'accentue avec le temps. Les aidants seront plus nombreux et sollicités mais est-ce une
+        réponse soutenable et suffisante ?
+      <div class="space"></div>
+      <p><i> Fais glisser ta souris sur l'année pour voir le graphique s'animer </i> <p>
     </div>
+
     <div class="col-md-9">
       <div id="chart">
       </div>
@@ -346,10 +373,13 @@
 
       <div class="col-md-3">
         <br>
-        <p>Evolution du taux de dépendance vieilliesse (c'est à dire la part de la population ayant plus de 65 ans
-          sur la part de la population ayant entre 15 et 64 ans) et du nombre d'enfants par femmes dans 180 pays entre 1950 et 2018
-          puis des projections de l'ONU jusqu'en 2100 </p>
-        <p> Il s'agit de voir combien de personnes il y a dans la population active pour une personne de plus de 65 ans<p>
+
+        <p align="left">En 2012 au Japon, on a vendu <b>plus de couches pour les personnes âgées que pour les bébés</b> </p>
+
+        <br>
+        <p align="left"> La France (bulle grise) atteindra 40% de taux de dépendance vieilliesse en 2030, c'est à dire que pour 4 personnes au
+          dessus de 65 ans, il n'y aura que 10 personnes dans la population active.
+
       </div>
 
   </div>
@@ -418,15 +448,19 @@
         </div>
         <div class="col-md-4 col-sm-3">
           <p> Qui sommes nous? </br>
-          </br>
-        Nous sommes trois étudiant en master de Data Science à l'<a href="http://www.ensae.fr/">ENSAE ParisTech</a>. Nous avons réalisé ce projet dans le cadre d'un cours de Dataviz.</br>
-        - Gilles Cornec    <a href="https://www.linkedin.com/in/gilles-cornec-529044b2/"><img src="img/linkedin.png" title="Linkedin Gilles" width="20" height="20" /></a>
-      <a href="mailto:gilles.cornec@ensae.fr"><img src="img/mail.png" title="Mail Gilles" width="20" height="20" /></a> </br>
-        - Kenza Haouche    <a href="https://www.linkedin.com/in/kenza-haouche-2b9720a7/"><img src="img/linkedin.png" title="Linkedin Kenza" width="20" height="20" /></a>
-      <a href="mailto:kenza.haouche@ensae.fr"><img src="img/mail.png" title="Mail Kenza" width="20" height="20" /></a>  </br>
-        - Antoine Roy      <a href="https://www.linkedin.com/in/antoine-roy-6a5883100/"><img src="img/linkedin.png" title="Linkedin Antoine" width="20" height="20" /></a>
-        <a href="mailto:antoine.roy@ensae.fr"><img src="img/mail.png" title="Mail Antoine" width="20" height="20" /></a>
-       </p>
+            </br>
+              Nous sommes trois étudiant en master de Data Science à l'<a href="http://www.ensae.fr/">ENSAE ParisTech</a>.
+              Nous avons réalisé ce projet dans le cadre d'un cours de Dataviz.</br>
+            <ul>
+
+              <li> Gilles Cornec    <a href="https://www.linkedin.com/in/gilles-cornec-529044b2/"><img src="img/linkedin.png" title="Linkedin Gilles" width="20" height="20" /></a>
+          <a href="mailto:gilles.cornec@ensae.fr"><img src="img/mail.png" title="Mail Gilles" width="20" height="20" /></a> </li>
+              <li> Kenza Haouche    <a href="https://www.linkedin.com/in/kenza-haouche-2b9720a7/"><img src="img/linkedin.png" title="Linkedin Kenza" width="20" height="20" /></a>
+          <a href="mailto:kenza.haouche@ensae.fr"><img src="img/mail.png" title="Mail Kenza" width="20" height="20" /></a>  </li>
+              <li> Antoine Roy      <a href="https://www.linkedin.com/in/antoine-roy-6a5883100/"><img src="img/linkedin.png" title="Linkedin Antoine" width="20" height="20" /></a>
+            <a href="mailto:antoine.roy@ensae.fr"><img src="img/mail.png" title="Mail Antoine" width="20" height="20" /></a> </li>
+            </ul>
+          </p>
 
         </div>
         <div class="col-md-4 col-sm-3">
@@ -477,7 +511,7 @@
 
   // Chart dimensions.
   var margin = {top: 19.5, right: 19.5, bottom: 19.5, left: 39.5},
-      width = 800 - margin.right,
+      width = 750 - margin.right,
       height = 500 - margin.top - margin.bottom;
 
   // Various scales. These domains make assumptions of data, naturally.

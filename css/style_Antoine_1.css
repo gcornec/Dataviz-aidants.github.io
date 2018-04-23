@@ -488,19 +488,13 @@ label {
 
 
 
-
-
-
-
-
-
 /* Style the tab */
 .tab {
 	 overflow: hidden;
 	 border: 1px solid #FFFFFF;
 	 background-color: #f1f1f1;
-	 margin-right: 192px;
-	 margin-left: 192px;
+	 margin-right: 185px;
+	 margin-left: 185px;
 }
 
 /* Style the buttons that are used to open the tab content */
@@ -671,7 +665,7 @@ border-radius: 200px;
 
 /* CSS GILLES GRAPHE */
 #chart {
-  margin-left: -40px;
+  margin-left: -20px;
   height: 506px;
 }
 
@@ -716,4 +710,9 @@ text.x.label{
   fill: none;
   pointer-events: all;
   cursor: ew-resize;
+}
+
+ul{
+	list-style: square;
+	margin-left: 5px;
 }
