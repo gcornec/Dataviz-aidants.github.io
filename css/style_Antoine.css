@@ -597,6 +597,12 @@ h12 {
            color: #FF0000;
 }
 
+h13 {
+	text-transform: uppercase;
+	font-weight: 500;
+	line-height: 20px;
+	color: #0dad8d;
+}
 
 
 /* Popup container */
